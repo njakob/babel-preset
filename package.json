@@ -12,9 +12,8 @@
   "main": "lib/babelPreset.js",
   "scripts": {
     "clean": "rimraf lib",
-    "build:commithash": "git rev-parse HEAD > .commithash",
     "build:sources": "rollup -c rollup.config.js",
-    "build": "npm run clean && npm run build:commithash && npm run build:sources",
+    "build": "npm run clean && npm run build:sources",
     "lint:fix": "eslint --fix .",
     "lint": "eslint .",
     "test": "npm run lint",
